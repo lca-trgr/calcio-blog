@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il mio blog di calcio in italiano</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header, footer { background: #222; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #444; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .content { padding: 20px; max-width: 800px; margin: auto; background: white; }
+    .lang-switch { position: absolute; top: 10px; right: 20px; }
+    .lang-switch button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Il mio blog di calcio in italiano</h1>
+    <p id="subtitle">My football blog in Italian – learning through passion</p>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="muller.html">Articolo 1</a>
+    <a href="worldcup2014.html">Articolo 2</a>
+    <a href="calcio-tedesco.html">Articolo 3</a>
+    <a href="about.html">Chi sono</a>
+  </nav>
+
+  <div class="content">
+    <div id="home-it">
+      <h2>Benvenuti!</h2>
+      <p>Questo sito raccoglie i miei articoli in italiano sul calcio, scritti come parte di un progetto per migliorare la mia conoscenza della lingua. Ogni articolo parla di un aspetto diverso del calcio tedesco che amo. In futuro, pubblicherò anche le traduzioni in inglese.</p>
+    </div>
+    <div id="home-en" style="display:none">
+      <h2>Welcome!</h2>
+      <p>This website collects my articles in Italian about football, written as part of a project to improve my language skills. Each article covers a different aspect of the German football I love. In the future, I will also publish English translations.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Il mio blog di calcio in italiano</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('home-it').style.display = lang === 'it' ? 'block' : 'none';
+      document.getElementById('home-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('subtitle').innerText = lang === 'it'
+        ? 'My football blog in Italian – learning through passion'
+        : 'Il mio blog di calcio in italiano – imparare con passione';
+    }
+  </script>
+</body>
+</html>

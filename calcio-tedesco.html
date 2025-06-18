@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosa rende speciale il calcio tedesco</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header, footer { background: #222; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #444; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .content { padding: 20px; max-width: 800px; margin: auto; background: white; }
+    img { max-width: 100%; margin: 20px 0; }
+    .lang-switch { text-align: right; padding: 10px 20px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cosa rende speciale il calcio tedesco</h1>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="muller.html">Articolo 1</a>
+    <a href="worldcup2014.html">Articolo 2</a>
+    <a href="calcio-tedesco.html">Articolo 3</a>
+    <a href="about.html">Chi sono</a>
+  </nav>
+
+  <div class="content">
+    <div id="art3-it">
+      <p><strong>Tempo di lettura:</strong> 7-8 minuti</p>
+      <p>Il calcio tedesco non è solo sport. È cultura, è passione, è parte dell'identità nazionale. Per molti tifosi, andare allo stadio il sabato è una tradizione, un momento speciale da vivere con amici e famiglia. In questo articolo voglio raccontare perché, secondo me, il calcio tedesco è così unico.</p>
+      <img src="images/tifosi.jpg" alt="Tifosi tedeschi allo stadio">
+      <p>Uno degli aspetti più belli del calcio tedesco è l’atmosfera. Gli stadi sono sempre pieni, con tifosi che cantano per novanta minuti. La Sudtribune di Dortmund, per esempio, è famosa in tutto il mondo. In Germania, i tifosi sono parte attiva del gioco. C’è un legame forte tra la squadra e la gente. Le coreografie, le bandiere, i colori… tutto crea un ambiente emozionante.</p>
+      <img src="images/stadio.jpg" alt="Sudtribune Dortmund">
+      <p>In Germania, andare allo stadio è ancora accessibile. I prezzi dei biglietti sono più bassi rispetto ad altri paesi. Questo permette a tante persone, anche famiglie e studenti, di seguire la propria squadra. Inoltre, c’è un grande rispetto per i tifosi: i club ascoltano le opinioni dei supporter, e molte squadre sono in parte controllate dai propri fan.</p>
+      <p>Il calcio tedesco ha una lunga storia, fatta di valori chiari: disciplina, lavoro, spirito di gruppo. Anche le piccole squadre hanno tifosi fedeli e grande orgoglio. Il senso di appartenenza è forte. Non è solo una questione di vincere, ma di rappresentare una comunità.</p>
+      <p>Dopo il 2000, la Germania ha investito molto nei giovani. Oggi ci sono tanti talenti che nascono nei settori giovanili dei club. Questo sistema ha portato risultati: la vittoria al Mondiale 2014 è anche frutto di quel lavoro. Ma oltre al campo, è importante anche l’educazione: molti giocatori continuano a studiare, fanno parte di un modello sano.</p>
+      <p>Infine, quello che mi piace di più è che il calcio tedesco è ancora vicino alla sua gente. I giocatori spesso restano umili, parlano con i fan, partecipano a eventi locali. Questo crea un rapporto vero tra squadra e tifosi.</p>
+      <p>Il calcio tedesco è speciale perché combina tradizione, valori, e una vera connessione con i tifosi. Non è perfetto, ma ha un’anima. E per questo, io lo amo.</p>
+    </div>
+    <div id="art3-en" style="display:none">
+      <p><strong>Reading time:</strong> 7–8 minutes</p>
+      <p>German football is not just a sport. It is culture, passion, and part of the national identity. For many fans, going to the stadium on Saturdays is a tradition, a special moment to share with friends and family. In this article, I want to explain why I believe German football is so unique.</p>
+      <img src="images/tifosi.jpg" alt="German fans in the stadium">
+      <p>One of the best aspects of German football is the atmosphere. Stadiums are always full, with fans singing for ninety minutes. The Sudtribune in Dortmund, for example, is famous worldwide. In Germany, fans are an active part of the game. There is a strong bond between the team and the people. Choreographies, flags, colors… everything creates an exciting environment.</p>
+      <img src="images/stadio.jpg" alt="Dortmund South Stand">
+      <p>In Germany, going to matches is still affordable. Ticket prices are lower than in many other countries. This allows many people, including families and students, to support their team. There is also great respect for fans: clubs listen to supporters’ opinions, and many teams are partly fan-owned.</p>
+      <p>German football has a long history built on clear values: discipline, hard work, and team spirit. Even small clubs have loyal supporters and great pride. The sense of belonging is strong. It’s not just about winning but about representing a community.</p>
+      <p>Since 2000, Germany has invested heavily in youth. Today, many talents emerge from club academies. This system brought results: the 2014 World Cup win was also the fruit of that work. Beyond football, education matters: many players continue their studies and embody a healthy model.</p>
+      <p>Finally, what I love most is that German football is still close to its people. Players often remain humble, talk with fans, and participate in local events. This creates a real bond between the team and supporters.</p>
+      <p>German football is special because it combines tradition, values, and a genuine connection with fans. It’s not perfect, but it has a soul. And for that, I love it.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Il mio blog di calcio in italiano</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('art3-it').style.display = lang === 'it' ? 'block' : 'none';
+      document.getElementById('art3-en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>

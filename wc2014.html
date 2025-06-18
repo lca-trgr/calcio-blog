@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Germania e il Mondiale 2014</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header, footer { background: #222; color: #fff; padding: 20px; text-align: center; }
+    nav { background: #444; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .content { padding: 20px; max-width: 800px; margin: auto; background: white; }
+    img { max-width: 100%; margin: 20px 0; }
+    .lang-switch { text-align: right; padding: 10px 20px; }
+    button { margin-left: 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>La Germania e la vittoria indimenticabile del Mondiale 2014</h1>
+  </header>
+
+  <div class="lang-switch">
+    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
+    <button onclick="setLanguage('en')">🇬🇧 English</button>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="muller.html">Articolo 1</a>
+    <a href="worldcup2014.html">Articolo 2</a>
+    <a href="calcio-tedesco.html">Articolo 3</a>
+    <a href="about.html">Chi sono</a>
+  </nav>
+
+  <div class="content">
+    <div id="art2-it">
+      <p><strong>Tempo di lettura:</strong> 7-8 minuti</p>
+      <p>Nel mondo del calcio ci sono momenti che restano nella memoria per sempre. Uno di questi è senza dubbio la vittoria della <strong>Germania</strong> alla <strong>Coppa del Mondo</strong> del 2014 in Brasile. È stato un torneo pieno di emozioni, partite intense e soprattutto una dimostrazione di spirito di squadra, disciplina e talento.</p>
+      <img src="images/germania2014.jpg" alt="Squadra tedesca con la coppa">
+      <p>Il momento più incredibile del torneo è stata la semifinale contro il <strong>Brasile</strong>, finita 7-1. Una prestazione storica, con gol spettacolari e un dominio totale. Thomas Müller ha segnato il primo gol, poi Klose, Kroos e Schürrle hanno completato l'opera.</p>
+      <img src="images/semifinale.jpg" alt="Semifinale Germania-Brasile">
+      <p>In finale, la Germania ha incontrato l'Argentina. È stata una partita molto combattuta, decisa solo nei <strong>tempi supplementari</strong>. Al minuto 113, Mario Götze ha segnato il gol della vittoria dopo un bel passaggio di Schürrle.</p>
+      <p>Dopo la vittoria, milioni di tifosi hanno festeggiato in tutte le città della Germania. A Berlino, più di 500.000 persone si sono radunate per accogliere i campioni. L'atmosfera era incredibile: bandiere, canti, abbracci e un grande orgoglio nazionale.</p>
+      <p>Il Mondiale 2014 non è solo un ricordo: è un simbolo di ciò che una squadra può ottenere con unione, lavoro e passione. Per ogni tifoso tedesco, sarà sempre un motivo di orgoglio.</p>
+    </div>
+    <div id="art2-en" style="display:none">
+      <p><strong>Reading time:</strong> 7–8 minutes</p>
+      <p>Some moments in football stay in your memory forever. One of these is Germany’s victory at the 2014 World Cup in Brazil. It was a tournament full of emotions, intense matches, and above all a display of teamwork, discipline, and talent.</p>
+      <img src="images/germania2014.jpg" alt="German team with the trophy">
+      <p>The most incredible moment was the semifinal against Brazil, which ended 7–1. A historic performance, with spectacular goals and total dominance. Thomas Müller scored the first goal, then Klose, Kroos, and Schürrle completed the rout.</p>
+      <img src="images/semifinale.jpg" alt="Germany vs Brazil semifinal">
+      <p>In the final, Germany faced Argentina. It was a fiercely contested match, decided only in extra time. In the 113th minute, Mario Götze scored the winning goal after a beautiful pass from Schürrle.</p>
+      <p>After the win, millions of fans celebrated across Germany. In Berlin, over 500,000 people gathered to welcome the champions. The atmosphere was incredible: flags, chants, hugs, and great national pride.</p>
+      <p>The 2014 World Cup is not just a memory: it is a symbol of what a team can achieve with unity, hard work, and passion. For every German fan, it will always be a source of pride.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Il mio blog di calcio in italiano</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById('art2-it').style.display = lang === 'it' ? 'block' : 'none';
+      document.getElementById('art2-en').style.display = lang === 'en' ? 'block' : 'none';
+    }
+  </script>
+</body>
+</html>
