@@ -1,0 +1,6 @@
+/* Constrain preview-cards and article images to a max height */
+.card-img-top,
+article img {
+  max-height: 300px;         /* or whatever works for you */
+  object-fit: cover;         /* preserves aspect-ratio and crops overflow */
+}
