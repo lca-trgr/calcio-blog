@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Il mio blog di calcio in italiano</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom Styles -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,9 +18,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="muller.html">Articolo 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="worldcup2014.html">Articolo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="wc2014.html">Articolo 2</a></li>
           <li class="nav-item"><a class="nav-link" href="calcio-tedesco.html">Articolo 3</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Chi sono</a></li>
         </ul>
@@ -41,13 +40,13 @@
     </div>
   </header>
 
-  <!-- Main Content: Article Previews -->
+  <!-- Article Previews -->
   <div class="container">
     <div class="row g-4">
-      <!-- Article 1 Preview -->
+      <!-- Preview Article 1 -->
       <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-          <img src="images/muller1.jpg" class="card-img-top" alt="Thomas Müller">
+          <img src="images/muller1.jpeg" class="card-img-top img-fluid rounded" alt="Thomas Müller">
           <div class="card-body">
             <h5 class="card-title">Thomas Müller</h5>
             <p class="card-text">Scopri la carriera e l'addio di una leggenda del Bayern Monaco.</p>
@@ -55,21 +54,21 @@
           </div>
         </div>
       </div>
-      <!-- Article 2 Preview -->
+      <!-- Preview Article 2 -->
       <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-          <img src="images/germania2014.jpg" class="card-img-top" alt="Germania Mondiale 2014">
+          <img src="images/wm2014-1.jpeg" class="card-img-top img-fluid rounded" alt="Germania Mondiale 2014">
           <div class="card-body">
             <h5 class="card-title">Mondiale 2014</h5>
             <p class="card-text">Rivivi la vittoria indimenticabile della Germania in Brasile.</p>
-            <a href="worldcup2014.html" class="btn btn-primary">Leggi l'articolo</a>
+            <a href="wc2014.html" class="btn btn-primary">Leggi l'articolo</a>
           </div>
         </div>
       </div>
-      <!-- Article 3 Preview -->
+      <!-- Preview Article 3 -->
       <div class="col-md-4">
         <div class="card h-100 shadow-sm">
-          <img src="images/tifosi.jpg" class="card-img-top" alt="Tifosi tedeschi">
+          <img src="images/calciotedesco1.jpeg" class="card-img-top img-fluid rounded" alt="Tifosi tedeschi">
           <div class="card-body">
             <h5 class="card-title">Calcio tedesco</h5>
             <p class="card-text">Scopri cosa rende unica la cultura calcistica in Germania.</p>
@@ -88,10 +87,10 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T" crossorigin="anonymous"></script>
   <script>
     function setLanguage(lang) {
-      // Home toggles in custom JS if needed
+      // Home page has only preview links, no content sections to toggle
     }
   </script>
 </body>
