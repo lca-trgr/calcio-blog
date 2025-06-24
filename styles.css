@@ -1,31 +1,67 @@
-/* styles.css – Custom site-wide styles */
+/* styles.css – Green/White/Black "Pitch" Vibe */
 
 /* Import Roboto font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-/* Base Typography */
+/* Base Typography & Background */
 body {
   font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #eef2f5;
+  background-color: #e8f5e9; /* light pitch-green */
+  color: #212121; /* dark text */
   margin: 0;
   padding: 0;
 }
 
-/* Layout: Centered main container */
+/* Centered Container */
 .container {
   max-width: 750px;
   margin: 0 auto;
   padding: 0 15px;
+  background-color: #ffffff;
 }
 
 /* Headings */
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
-  color: #004080;
+  color: #1B5E20; /* deep green */
   margin-top: 1rem;
   margin-bottom: 0.5rem;
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #0B3D0B !important; /* dark pitch-green */
+  border-bottom: none;
+}
+a.nav-link {
+  color: #ffffff !important;
+  transition: color 0.2s;
+}
+a.nav-link:hover {
+  color: #A5D6A7 !important; /* light green accent */
+}
+
+/* Hero Section */
+header {
+  background-color: #1B5E20; /* medium green */
+  color: #ffffff;
+  border-bottom: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+header .lead {
+  color: #c8e6c9;
+  margin-bottom: 0;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #2E7D32; /* solid green */
+  border-color: #2E7D32;
+  transition: background-color 0.2s;
+}
+.btn-primary:hover {
+  background-color: #1B5E20;
+  border-color: #1B5E20;
 }
 
 /* Card Hover Effects */
@@ -34,36 +70,20 @@ h1, h2, h3 {
 }
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 20px rgba(27,94,32,0.4);
 }
 
-/* Navigation Links */
-a.nav-link {
-  transition: color 0.2s ease;
-}
-a.nav-link:hover {
-  color: #ffcc00; /* German-flag yellow accent */
-}
-
-/* Buttons */
-.btn-primary {
-  background-color: #004080;
-  border-color: #004080;
-  transition: background-color 0.2s ease;
-}
-.btn-primary:hover {
-  background-color: #003060;
-}
-
-/* Content Text Alignment and Spacing */
-.content, article {
+/* Text & Spacing in Articles */
+article {
   text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 article p {
   margin-bottom: 1rem;
 }
 
-/* Card Preview & Article Images */
+/* Images */
 .card-img-top,
 article img {
   max-height: 300px;
@@ -74,37 +94,17 @@ article img {
   display: block;
 }
 
-/* Hero Section */
-header {
-  background-image: linear-gradient(135deg, #004080 0%, #0066c0 100%);
-  color: white;
-  border-bottom: 3px solid #ffcc00;
-}
-header .lead {
-  color: #f0f0f0;
-}
-
-/* Navbar Accent */
-.navbar {
-  border-bottom: 3px solid #ffcc00;
-}
-
 /* Footer */
 footer {
-  background-color: #111;
-  color: #ccc;
-}
-
-/* Utility: Text shadow for contrast */
-.text-shadow {
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  background-color: #0B3D0B;
+  color: #c8e6c9;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
 }
 
 /* Responsive Tweaks */
 @media (max-width: 576px) {
-  body {
-    padding: 0 10px;
-  }
   .card-img-top,
   article img {
     max-height: 200px;
