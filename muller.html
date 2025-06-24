@@ -35,10 +35,7 @@
   <header class="py-5 bg-secondary text-white text-center mb-4">
     <div class="container">
       <h1 class="fw-light">Thomas Müller e la fine di un’era</h1>
-      <div class="lang-switch mt-3">
-        <button class="btn btn-light btn-sm me-2" onclick="setLanguage('it')">🇮🇹 Italiano</button>
-        <button class="btn btn-light btn-sm" onclick="setLanguage('en')">🇬🇧 English</button>
-      </div>
+      
     </div>
   </header>
 
@@ -65,11 +62,6 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T" crossorigin="anonymous"></script>
-  <script>
-    function setLanguage(lang) {
-      document.getElementById('art-it').style.display = (lang==='it')?'block':'none';
-      document.getElementById('art-en').style.display = (lang==='en')?'block':'none';
-    }
-  </script>
+ 
 </body>
 </html>
