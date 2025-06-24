@@ -2,63 +2,78 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cosa rende speciale il calcio tedesco</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE"
+        crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Cosa rende speciale il calcio tedesco</h1>
-  </header>
-
-  <div class="lang-switch">
-    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-  </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="muller.html">Articolo 1</a>
-    <a href="wc2014.html">Articolo 2</a>
-    <a href="calcio-tedesco.html">Articolo 3</a>
-    <a href="about.html">Chi sono</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Il mio blog di calcio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="muller.html">Articolo 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="worldcup2014.html">Articolo 2</a></li>
+          <li class="nav-item"><a class="nav-link active" href="calcio-tedesco.html">Articolo 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Chi sono</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="content">
-    <div id="art3-it">
-      <p><strong>Tempo di lettura:</strong> 7-8 minuti</p>
-      <p>Il calcio tedesco non è solo sport. È cultura, è passione, è parte dell'identità nazionale. Per molti tifosi, andare allo stadio il sabato è una tradizione, un momento speciale da vivere con amici e famiglia. In questo articolo voglio raccontare perché, secondo me, il calcio tedesco è così unico.</p>
-      <img src="images/tifosi.jpg" alt="Tifosi tedeschi allo stadio">
-      <p>Uno degli aspetti più belli del calcio tedesco è l’atmosfera. Gli stadi sono sempre pieni, con tifosi che cantano per novanta minuti. La Sudtribune di Dortmund, per esempio, è famosa in tutto il mondo. In Germania, i tifosi sono parte attiva del gioco. C’è un legame forte tra la squadra e la gente. Le coreografie, le bandiere, i colori… tutto crea un ambiente emozionante.</p>
-      <img src="images/stadio.jpg" alt="Sudtribune Dortmund">
-      <p>In Germania, andare allo stadio è ancora accessibile. I prezzi dei biglietti sono più bassi rispetto ad altri paesi. Questo permette a tante persone, anche famiglie e studenti, di seguire la propria squadra. Inoltre, c’è un grande rispetto per i tifosi: i club ascoltano le opinioni dei supporter, e molte squadre sono in parte controllate dai propri fan.</p>
-      <p>Il calcio tedesco ha una lunga storia, fatta di valori chiari: disciplina, lavoro, spirito di gruppo. Anche le piccole squadre hanno tifosi fedeli e grande orgoglio. Il senso di appartenenza è forte. Non è solo una questione di vincere, ma di rappresentare una comunità.</p>
-      <p>Dopo il 2000, la Germania ha investito molto nei giovani. Oggi ci sono tanti talenti che nascono nei settori giovanili dei club. Questo sistema ha portato risultati: la vittoria al Mondiale 2014 è anche frutto di quel lavoro. Ma oltre al campo, è importante anche l’educazione: molti giocatori continuano a studiare, fanno parte di un modello sano.</p>
-      <p>Infine, quello che mi piace di più è che il calcio tedesco è ancora vicino alla sua gente. I giocatori spesso restano umili, parlano con i fan, partecipano a eventi locali. Questo crea un rapporto vero tra squadra e tifosi.</p>
-      <p>Il calcio tedesco è speciale perché combina tradizione, valori, e una vera connessione con i tifosi. Non è perfetto, ma ha un’anima. E per questo, io lo amo.</p>
+  <!-- Hero -->
+  <header class="py-5 bg-secondary text-white text-center mb-4">
+    <div class="container">
+      <h1 class="fw-light">Cosa rende speciale il calcio tedesco</h1>
+      <div class="lang-switch mt-3">
+        <button class="btn btn-light btn-sm me-2" onclick="setLanguage('it')">🇮🇹 Italiano</button>
+        <button class="btn btn-light btn-sm" onclick="setLanguage('en')">🇬🇧 English</button>
+      </div>
     </div>
-    <div id="art3-en" style="display:none">
-      <p><strong>Reading time:</strong> 7–8 minutes</p>
-      <p>German football is not just a sport. It is culture, passion, and part of the national identity. For many fans, going to the stadium on Saturdays is a tradition, a special moment to share with friends and family. In this article, I want to explain why I believe German football is so unique.</p>
-      <img src="images/tifosi.jpg" alt="German fans in the stadium">
-      <p>One of the best aspects of German football is the atmosphere. Stadiums are always full, with fans singing for ninety minutes. The Sudtribune in Dortmund, for example, is famous worldwide. In Germany, fans are an active part of the game. There is a strong bond between the team and the people. Choreographies, flags, colors… everything creates an exciting environment.</p>
-      <img src="images/stadio.jpg" alt="Dortmund South Stand">
-      <p>In Germany, going to matches is still affordable. Ticket prices are lower than in many other countries. This allows many people, including families and students, to support their team. There is also great respect for fans: clubs listen to supporters’ opinions, and many teams are partly fan-owned.</p>
-      <p>German football has a long history built on clear values: discipline, hard work, and team spirit. Even small clubs have loyal supporters and great pride. The sense of belonging is strong. It’s not just about winning but about representing a community.</p>
-      <p>Since 2000, Germany has invested heavily in youth. Today, many talents emerge from club academies. This system brought results: the 2014 World Cup win was also the fruit of that work. Beyond football, education matters: many players continue their studies and embody a healthy model.</p>
-      <p>Finally, what I love most is that German football is still close to its people. Players often remain humble, talk with fans, and participate in local events. This creates a real bond between the team and supporters.</p>
-      <p>German football is special because it combines tradition, values, and a genuine connection with fans. It’s not perfect, but it has a soul. And for that, I love it.</p>
-    </div>
-  </div>
+  </header>
 
-  <footer>
-    <p>&copy; 2025 Il mio blog di calcio in italiano</p>
+  <!-- Article -->
+  <article class="container mb-5">
+    <div id="art-it">
+      <img src="images/calciotedesco1.jpeg" class="img-fluid rounded mb-4" alt="Tifosi tedeschi allo stadio">
+      <p>Il calcio tedesco non è solo sport. È cultura, è passione, è parte dell'identità nazionale...</p>
+      <img src="images/stadio1.jpeg" class="img-fluid rounded mb-4" alt="Sudtribune Dortmund">
+      <!-- (add all your Italian paragraphs here) -->
+    </div>
+    <div id="art-en" style="display:none">
+      <img src="images/calciotedesco1.jpeg" class="img-fluid rounded mb-4" alt="German fans in the stadium">
+      <p>German football is not just a sport. It is culture, passion, and part of the national identity...</p>
+      <img src="images/stadio1.jpeg" class="img-fluid rounded mb-4" alt="Dortmund South Stand">
+      <!-- (add all your English paragraphs here) -->
+    </div>
+  </article>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2025 Il mio blog di calcio in italiano</p>
+    </div>
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T"
+          crossorigin="anonymous"></script>
   <script>
     function setLanguage(lang) {
-      document.getElementById('art3-it').style.display = lang === 'it' ? 'block' : 'none';
-      document.getElementById('art3-en').style.display = lang === 'en' ? 'block' : 'none';
+      document.getElementById('art-it').style.display = lang==='it' ? 'block':'none';
+      document.getElementById('art-en').style.display = lang==='en' ? 'block':'none';
     }
   </script>
 </body>
