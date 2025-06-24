@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Chi sono</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE"
-        crossorigin="anonymous">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE"
+    crossorigin="anonymous"
+  >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +27,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="muller.html">Articolo 1</a></li>
-          <li class="nav-item"><a class="nav-link" href="worldcup2014.html">Articolo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="wc2014.html">Articolo 2</a></li>
           <li class="nav-item"><a class="nav-link" href="calcio-tedesco.html">Articolo 3</a></li>
           <li class="nav-item"><a class="nav-link active" href="about.html">Chi sono</a></li>
         </ul>
@@ -38,7 +41,7 @@
       <h1 class="fw-light">Chi sono</h1>
       <div class="lang-switch mt-3">
         <button class="btn btn-light btn-sm me-2" onclick="setLanguage('it')">🇮🇹 Italiano</button>
-        <button class="btn btn-light btn-sm" onclick="setLanguage('en')">🇬🇧 English</button>
+        <button class="btn btn-light btn-sm"        onclick="setLanguage('en')">🇬🇧 English</button>
       </div>
     </div>
   </header>
@@ -46,10 +49,18 @@
   <!-- About Content -->
   <article class="container mb-5">
     <div id="about-it">
-      <p>Ciao! Mi chiamo [tuo nome] e ho creato questo blog per un progetto universitario. Amo il calcio e sto cercando di migliorare il mio italiano scrivendo articoli su un argomento che mi appassiona davvero. Questo sito è il mio modo per imparare una lingua in modo pratico e creativo. In futuro voglio aggiungere nuove pagine e anche le traduzioni in inglese dei miei testi. Grazie per aver visitato il mio blog!</p>
+      <p>Ciao! Mi chiamo Luca e ho creato questo blog per un progetto universitario. Amo il calcio e sto cercando di migliorare il mio italiano scrivendo articoli su un argomento che mi appassiona davvero.</p>
+      <p>Questo sito è il mio modo per imparare una lingua in modo pratico e creativo. Ogni articolo mi aiuta a consolidare nuove parole e strutture, e posso cliccare per vedere la traduzione in inglese se ho dubbi.</p>
+      <p>Durante lo sviluppo del sito, ho imparato a usare HTML, CSS e Bootstrap—aumentando anche le mie competenze tecniche, utili per il mio futuro lavorativo.</p>
+      <p>In futuro voglio aggiungere nuove pagine, integrare un sistema di commenti e pubblicare le traduzioni in inglese per raggiungere più lettori.</p>
+      <p>Grazie per aver visitato il mio blog e per supportare il mio percorso di apprendimento!</p>
     </div>
     <div id="about-en" style="display:none">
-      <p>Hi! My name is [your name] and I created this blog for a university project. I love football and I am trying to improve my Italian by writing about a topic I really care about. This site is my way to learn a language in a practical and creative way. In the future, I want to add new pages and also upload English translations of my texts. Thanks for visiting my blog!</p>
+      <p>Hi! My name is Luca and I created this blog for a university project. I love football and I am trying to improve my Italian by writing articles on a topic I’m truly passionate about.</p>
+      <p>This site is my way to learn a language in a practical and creative way. Each article helps me consolidate new words and structures, and I can click to see the English translation if I have doubts.</p>
+      <p>While building the site, I learned to use HTML, CSS, and Bootstrap—boosting my technical skills, which are valuable for my future career.</p>
+      <p>In the future, I want to add new pages, integrate a comment system, and publish English translations to reach more readers.</p>
+      <p>Thank you for visiting my blog and supporting my learning journey!</p>
     </div>
   </article>
 
@@ -61,13 +72,15 @@
   </footer>
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T"
-          crossorigin="anonymous"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T"
+    crossorigin="anonymous"
+  ></script>
   <script>
     function setLanguage(lang) {
-      document.getElementById('about-it').style.display = lang==='it' ? 'block':'none';
-      document.getElementById('about-en').style.display = lang==='en' ? 'block':'none';
+      document.getElementById('about-it').style.display = (lang === 'it') ? 'block' : 'none';
+      document.getElementById('about-en').style.display = (lang === 'en') ? 'block' : 'none';
     }
   </script>
 </body>
