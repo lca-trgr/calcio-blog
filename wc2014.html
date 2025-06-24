@@ -5,26 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>La Germania e la vittoria indimenticabile del Mondiale 2014</title>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-        rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE"
-        crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Il mio blog di calcio</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav"
-              aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="muller.html">Articolo 1</a></li>
-          <li class="nav-item"><a class="nav-link active" href="worldcup2014.html">Articolo 2</a></li>
+          <li class="nav-item"><a class="nav-link active" href="wc2014.html">Articolo 2</a></li>
           <li class="nav-item"><a class="nav-link" href="calcio-tedesco.html">Articolo 3</a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Chi sono</a></li>
         </ul>
@@ -32,7 +27,6 @@
     </div>
   </nav>
 
-  <!-- Hero -->
   <header class="py-5 bg-secondary text-white text-center mb-4">
     <div class="container">
       <h1 class="fw-light">La Germania e la vittoria indimenticabile del Mondiale 2014</h1>
@@ -43,37 +37,32 @@
     </div>
   </header>
 
-  <!-- Article -->
   <article class="container mb-5">
     <div id="art-it">
-      <img src="images/wm2014-1.jpeg" class="img-fluid rounded mb-4" alt="Squadra Tedesca Mondiale 2014">
-      <p>Nel mondo del calcio ci sono momenti che restano nella memoria per sempre. Uno di questi è senza dubbio la vittoria della Germania alla Coppa del Mondo del 2014 in Brasile...</p>
-      <img src="images/wm2014-2.jpeg" class="img-fluid rounded mb-4" alt="Mario Götze segna il gol decisivo">
-      <!-- (add additional Italian text) -->
+      <img src="images/wm2014-1.jpeg" class="img-fluid rounded mb-4" alt="Germania 7-1 semifinale">
+      <p>Nel mondo del calcio ci sono momenti che restano nella memoria per sempre…</p>
+      <img src="images/wm2014-2.jpeg" class="img-fluid rounded mb-4" alt="Maria Götze gol">
+      <p>In finale, la Germania ha incontrato l'Argentina…</p>
     </div>
     <div id="art-en" style="display:none">
-      <img src="images/wm2014-1.jpeg" class="img-fluid rounded mb-4" alt="German team World Cup 2014">
-      <p>Some moments in football stay in your memory forever. One of these is Germany’s victory at the 2014 World Cup in Brazil...</p>
-      <img src="images/wm2014-2.jpeg" class="img-fluid rounded mb-4" alt="Mario Götze scores winning goal">
-      <!-- (add additional English text) -->
+      <img src="images/wm2014-1.jpeg" class="img-fluid rounded mb-4" alt="Germany 7-1 semifinal">
+      <p>Some moments in football stay in your memory forever…</p>
+      <img src="images/wm2014-2.jpeg" class="img-fluid rounded mb-4" alt="Mario Götze goal">
+      <p>In the final, Germany faced Argentina…</p>
     </div>
   </article>
 
-  <!-- Footer -->
   <footer class="py-4 bg-dark text-white">
     <div class="container text-center">
-      <p class="mb-0">&copy; 2025 Il mio blog di calcio in italiano</p>
+      <p class="mb-0">© 2025 Il mio blog di calcio in italiano</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T"
-          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HoA5j4mZezy8hI6Z+lzBGZvYBvKjrZK+PVncQp/q9ZDY5pTq3+Zj2u9nM+QN252T" crossorigin="anonymous"></script>
   <script>
     function setLanguage(lang) {
-      document.getElementById('art-it').style.display = lang==='it' ? 'block':'none';
-      document.getElementById('art-en').style.display = lang==='en' ? 'block':'none';
+      document.getElementById('art-it').style.display = (lang==='it')?'block':'none';
+      document.getElementById('art-en').style.display = (lang==='en')?'block':'none';
     }
   </script>
 </body>
