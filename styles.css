@@ -1,4 +1,7 @@
-/* styles.css - Custom site-wide styles */
+/* styles.css – Custom site-wide styles */
+
+/* Import Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 /* Base Typography */
 body {
@@ -6,6 +9,15 @@ body {
   line-height: 1.6;
   color: #333;
   background-color: #eef2f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Layout: Centered main container */
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /* Headings */
@@ -25,7 +37,7 @@ h1, h2, h3 {
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-/* Link Styling */
+/* Navigation Links */
 a.nav-link {
   transition: color 0.2s ease;
 }
@@ -43,34 +55,52 @@ a.nav-link:hover {
   background-color: #003060;
 }
 
-/* Card Images & Article Images */
+/* Content Text Alignment and Spacing */
+.content, article {
+  text-align: left;
+}
+article p {
+  margin-bottom: 1rem;
+}
+
+/* Card Preview & Article Images */
 .card-img-top,
 article img {
   max-height: 300px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 1rem auto;
   object-fit: cover;
+  display: block;
 }
 
 /* Hero Section */
 header {
   background-image: linear-gradient(135deg, #004080 0%, #0066c0 100%);
   color: white;
+  border-bottom: 3px solid #ffcc00;
 }
 header .lead {
   color: #f0f0f0;
 }
 
+/* Navbar Accent */
+.navbar {
+  border-bottom: 3px solid #ffcc00;
+}
+
 /* Footer */
 footer {
-  background-color: #222;
+  background-color: #111;
   color: #ccc;
 }
 
-/* Utility: Text shadow for better contrast */
+/* Utility: Text shadow for contrast */
 .text-shadow {
   text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
 }
 
-/* Responsive tweaks */
+/* Responsive Tweaks */
 @media (max-width: 576px) {
   body {
     padding: 0 10px;
@@ -78,5 +108,6 @@ footer {
   .card-img-top,
   article img {
     max-height: 200px;
+    max-width: 100%;
   }
 }
