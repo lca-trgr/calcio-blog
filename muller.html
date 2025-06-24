@@ -2,60 +2,38 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thomas Müller e la fine di un’era</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-ysEeFGJS+ZhdnDPS2r5jR3gh+qk52j3R6xV2V/K+11+HAwY0yOdF0MBBPmdwX+UE"
+        crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Thomas Müller e la fine di un’era al Bayern Monaco</h1>
-  </header>
-
-  <div class="lang-switch">
-    <button onclick="setLanguage('it')">🇮🇹 Italiano</button>
-    <button onclick="setLanguage('en')">🇬🇧 English</button>
-  </div>
-
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="muller.html">Articolo 1</a>
-    <a href="wc2014.html">Articolo 2</a>
-    <a href="calcio-tedesco.html">Articolo 3</a>
-    <a href="about.html">Chi sono</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Il mio blog di calcio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="muller.html">Articolo 1</a></li>
+          <li class="nav-item"><a class="nav-link" href="worldcup2014.html">Articolo 2</a></li>
+          <li class="nav-item"><a class="nav-link" href="calcio-tedesco.html">Articolo 3</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Chi sono</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <div class="content">
-    <div id="art1-it">
-      <p><strong>Tempo di lettura:</strong> 7-8 minuti</p>
-      <p>Thomas Müller non è solo un calciatore. È un simbolo, una leggenda vivente del Bayern Monaco, un giocatore che ha rappresentato la fedeltà, il carattere e lo spirito di squadra per oltre quindici stagioni. In un calcio moderno dove la transizione è costante, dove i calciatori cambiano club ogni due anni, Müller ha mostrato una dedizione rara.</p>
-      <img src="images/muller1.jpg" alt="Thomas Müller saluta i tifosi">
-      <p>Nato a Weilheim in Alta Baviera, Thomas entra nel settore giovanile del Bayern nel 2000, a soli 11 anni. Dopo anni di allenamento e crescita, fa il suo debutto in prima squadra nel 2008. Da allora, ha accumulato più di 600 partite ufficiali con la maglia del Bayern, segnando oltre 230 gol. Il suo ruolo è difficile da definire: non è un classico attaccante, non è un centrocampista puro. Lui stesso si definisce un “Raumdeuter”, un interprete degli spazi.</p>
-      <img src="images/muller2.jpg" alt="Thomas Müller in campo con il Bayern">
-      <p>Con il Bayern ha vinto tutto: 12 Bundesliga, 6 Coppe di Germania, 2 Champions League e una miriade di altri trofei. Con la nazionale tedesca ha vinto la Coppa del Mondo nel 2014, segnando gol decisivi e mostrando grande carisma.</p>
-      <p>Ma ora, nel 2024, il futuro di Müller sembra incerto. Nella stagione appena conclusa, il suo tempo in campo si è ridotto. L’allenatore ha preferito dare spazio a giocatori più giovani, e spesso Müller è partito dalla panchina. Nonostante ciò, quando entra in campo, il suo impatto è sempre evidente. La sua visione di gioco, la sua intelligenza tattica e la sua energia sono ancora preziose.</p>
-      <p>Scrivere questo articolo è stato difficile. Il mio livello di italiano non è alto. Ma ho imparato tante parole nuove, e ho capito meglio la lingua. Grazie, Thomas, per tutto.</p>
-    </div>
-    <div id="art1-en" style="display:none">
-      <p><strong>Reading time:</strong> 7–8 minutes</p>
-      <p>Thomas Müller is more than just a player. He is a symbol, a living legend of Bayern Munich, a footballer who has embodied loyalty, character, and team spirit for over fifteen seasons. In modern football, where transitions are constant and players switch clubs every two years, Müller has shown rare dedication.</p>
-      <img src="images/muller1.jpg" alt="Thomas Müller greeting fans">
-      <p>Born in Weilheim, Bavaria, Thomas joined Bayern’s youth academy in 2000 at just 11 years old. After years of training and growth, he made his first-team debut in 2008. Since then, he has played over 600 official matches, scoring more than 230 goals. His role is hard to define: he is neither a classic striker nor a pure midfielder. He calls himself a “Raumdeuter,” an interpreter of space.</p>
-      <img src="images/muller2.jpg" alt="Thomas Müller on the pitch with Bayern">
-      <p>With Bayern he’s won it all: 12 Bundesliga titles, 6 German Cups, 2 Champions Leagues, and countless other trophies. With Germany, he won the 2014 World Cup, scoring decisive goals and showing great charisma.</p>
-      <p>But now, in 2024, Müller’s future seems uncertain. In the past season his playing time has decreased. The coach has favored younger players, and Müller often started on the bench. Yet, when he enters the pitch, his impact is undeniable. His vision, tactical intelligence, and energy remain invaluable.</p>
-      <p>Writing this article was challenging. My Italian level isn’t high. But I learned many new words and improved my language. Thank you, Thomas, for everything.</p>
-    </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Il mio blog di calcio in italiano</p>
-  </footer>
-
-  <script>
-    function setLanguage(lang) {
-      document.getElementById('art1-it').style.display = lang === 'it' ? 'block' : 'none';
-      document.getElementById('art1-en').style.display = lang === 'en' ? 'block' : 'none';
-    }
-  </script>
-</body>
-</html>
+  <!-- Hero -->
+  <header class="py-5 bg-secondary text-white text-center mb-4">
+    <div class="container">
+      <h1 class="fw-light">Thomas Müller e la fine di un’era</h1>
+      <div class="lan
